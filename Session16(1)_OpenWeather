@@ -1,0 +1,4 @@
+location = input("Enter the location:")
+url="http://api.openweathermap.org/data/2.5/weather?q=%s&appid=b507cb7db4ffa03e49988e569a461b72"%(location)
+weather = requests.get(url).content
+print(weather)
