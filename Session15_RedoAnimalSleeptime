@@ -1,0 +1,5 @@
+animals = requests.get(r"https://raw.githubusercontent.com/genomicsclass/dagdata/master/inst/extdata/msleep_ggplot2.csv")
+animallist = str(animals.content).split("\\n")
+animallist.pop()
+for eachanimal in animallist:
+    print("""%s \t %s"""%(eachanimal.split(",")[0],eachanimal.split(",")[5]))
