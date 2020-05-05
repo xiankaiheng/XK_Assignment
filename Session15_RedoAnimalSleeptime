@@ -1,3 +1,4 @@
+import requests
 animals = requests.get(r"https://raw.githubusercontent.com/genomicsclass/dagdata/master/inst/extdata/msleep_ggplot2.csv")
 animallist = str(animals.content).split("\\n")
 animallist.pop()
