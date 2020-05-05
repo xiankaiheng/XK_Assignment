@@ -1,3 +1,4 @@
+import requests
 RNJ = requests.get(r"https://ia800302.us.archive.org/20/items/romeojuliet01shak/romeojuliet01shak_djvu.txt")
 RNJC = RNJ.content
 
